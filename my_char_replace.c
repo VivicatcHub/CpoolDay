@@ -9,7 +9,8 @@ int taille(char *toRever) {
 }
 
 char *my_char_replace(char *origin, char toFind, char toReplace) {
-    for (int i = 0; i <= taille(origin); i++) {
+    int t = taille(origin);
+    for (int i = 0; i <= t; i++) {
         if (origin[i] == toFind) {
             origin[i] = toReplace;
         }
