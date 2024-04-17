@@ -1,9 +1,7 @@
 void print_char(char c);
 
 void my_print_revert(char *toRever) {
-    int i = -1;
-    while(toRever[i] != toRever[0]) {
+    for (int i = sizeof toRever + 1; i >= 0; i--) {
         print_char(toRever[i]);
-        i--;
     }
 }
