@@ -9,9 +9,7 @@ int length(char *toRever) {
 }
 
 void my_print_revert(char *toRever) {
-    if (toRever >= 0) {
-        for (int i = length(toRever) - 1; i >= 0; i--) {
-            print_char(toRever[i]);
-        }
+    for (int i = length(toRever); i >= 0; i--) {
+        print_char(toRever[i]);
     }
 }
